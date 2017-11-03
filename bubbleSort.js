@@ -30,27 +30,26 @@
  *
 */
 
-// Introduce i into the global scope so we can test function efficiency
-var i;
 
-// Feel free to add helper functions if needed.
+function BubbleSort(array){
 
+  var counter = 0;
 
-var bubbleSort = function(arr) {
-    var count = 0;
+  while(counter < array.length) {
+    for(var i = 0; i < array.length; i++) {
+      var current = array[i];
+      var next = array[i+1];
 
-    while(count <= arr.length ) {
-      for (var i = 0; i < arr.length; i++) {
-      var current = arr[i];
-        if(current > arr[i+1]) {
-          arr[i] = arr[i+1];
-          arr[i+1] = current;
-        }
+      if(current > next) {
+        array[i] = next;
+        array[i+1] = current;
       }
-      count++;
     }
-    return arr;
-};
+     counter++;
+  }
+     return array;
+}
+
 
 //complexity 0(n^2);
 
