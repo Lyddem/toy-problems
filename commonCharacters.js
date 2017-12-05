@@ -45,13 +45,4 @@ var commonCharacters = function(str1, str2) {
 
   return final
 };
-
 // commonCharacters('acexivou', 'aegihobu');
-
-
-
-
-
-
-
-
