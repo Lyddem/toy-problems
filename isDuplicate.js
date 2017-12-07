@@ -20,3 +20,16 @@ function findDuplicates(arr) {
   }
     return removeDuplicates(duplicates);
 }
+
+//indexOf vs lastIndexOf solution
+function findDuplicate (arr) {
+
+  let store = [];
+
+  for(var i = 0; i < arr.length; i++) {
+    if(arr.indexOf(arr[i]) !== arr.lastIndexOf(arr[i])) {
+      store.push(arr[i]);
+    }
+  }
+    return removeDuplicates(store);
+}
