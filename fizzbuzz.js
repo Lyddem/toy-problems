@@ -1,4 +1,3 @@
-// see the Hint button if you're not sure how to start
 
 for(var i = 1; i <= 100; i++) {
   if(i % 3 === 0 && i % 5 === 0) {
